@@ -9,8 +9,8 @@ def read(src):
 
 prefix = '../ad.style.factory_cal.log.2020-12-09_'
 
-for i in [19,20]:
-    src = prefix+i
+for i in [18,19,20]:
+    src = prefix+str(i)
     read(src)
 num = 0
 for i in cacheInfo:
