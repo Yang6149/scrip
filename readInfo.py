@@ -2,7 +2,7 @@ cacheInfo = []
 def read(src):
     with open(src, 'r') as f:
         for line in f.readlines():
-            if "CacheHit" in line:
+            if "Cache change Size" in line:
                 cacheInfo.append(line)
 
     
@@ -14,6 +14,6 @@ for i in [19,20]:
     read(src)
 num = 0
 for i in cacheInfo:
-    if num%100==0:
-        print(i)
-    num +=1
+    #if num%100==0:
+    print(i)
+    #num +=1
